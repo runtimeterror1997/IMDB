@@ -24,6 +24,7 @@ class LoginLogoutTest(APITestCase):
         self.user = User.objects.create_user(username='testUser', password= 'test123')
         
         
+        
     def test_login(self):
         data = {
             'username': 'testUser',
